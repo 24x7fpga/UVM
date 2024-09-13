@@ -2,7 +2,7 @@
 
 import uvm_pkg::*;
 
-module test;
+module tb_test;
 
 initial begin
 	`uvm_info("RUN_TEST", "Vivado Script Simulation Test", UVM_NONE);
