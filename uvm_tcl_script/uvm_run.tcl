@@ -33,5 +33,10 @@ set_property top_lib xil_defaultlib [get_filesets sim_1]
 #set_property top test [current_fileset]
 #set_property top_file {$project_location/$project_name.sv} [current_fileset]
 
+# default simulation runtime is removed; by default it is set to 1000ns
+set_property -name {xsim.simulate.runtime} -value {} -objects [get_filesets sim_1]
+
 # Start Simulation
 launch_simulation
+# rull all
+run all
